@@ -1,0 +1,476 @@
+/*
+    objects[0] = 1.0;//type                          # 1 #  CIRCLE RED
+    objects[1] = 10.0;//x
+    objects[2] = 0.0;//y
+    objects[3] = 0.0;//z
+    objects[4] = 1.0;//ra
+
+    objects[5] = 1.0;//r
+    objects[6] = 0.0;//g
+    objects[7] = 0.0;//b
+    objects[8] = 1.0;// alpha k
+
+
+
+
+
+    objects[LEN_OBJ *1 +0] = 1.0;//type              # 2 #   CIRCLE BLUE
+    objects[LEN_OBJ * 1 + 1] = 0.0;//x
+    objects[LEN_OBJ * 1 + 2] = 10.0;//y
+    objects[LEN_OBJ * 1 + 3] = 0.0;//z
+    objects[LEN_OBJ * 1 + 4] = 1.0;//ra
+
+    objects[LEN_OBJ * 1 + 5] = 0.541;//r
+    objects[LEN_OBJ * 1 + 6] = 0.95;//g
+    objects[LEN_OBJ * 1 + 7] = 0.247;//b
+
+    objects[LEN_OBJ * 1 + 8] = 1.0;// alpha k
+
+
+
+    objects[LEN_OBJ * 2 + 0] = 1.0;//type            # 3 Light # CIRCLE LIGHT
+    objects[LEN_OBJ * 2 + 1] = 0.0;//x
+    objects[LEN_OBJ * 2 + 2] = 0.0;//y
+    objects[LEN_OBJ * 2 + 3] = 10.0;//z
+    objects[LEN_OBJ * 2 + 4] = 0.5;//ra
+
+    objects[LEN_OBJ * 2 + 5] = 1.0;//r
+    objects[LEN_OBJ * 2 + 6] = 1.0;//g
+    objects[LEN_OBJ * 2 + 7] = 1.0;//b
+
+    objects[LEN_OBJ * 2 + 8] = 1.0;// alpha k
+
+    objects[LEN_OBJ * 3 + 0] = 1.0;//type            # 4 # CIRCLE YELLOW
+    objects[LEN_OBJ * 3 + 1] = 5.0;//x
+    objects[LEN_OBJ * 3 + 2] = 0.0;//y
+    objects[LEN_OBJ * 3 + 3] = 5.0;//z
+    objects[LEN_OBJ * 3 + 4] = 1.0;//ra
+
+
+    objects[LEN_OBJ * 3 + 5] = 1.0;//r
+    objects[LEN_OBJ * 3 + 6] = 1.0;//g
+    objects[LEN_OBJ * 3 + 7] = 0.0;//b
+
+    objects[LEN_OBJ * 3 + 8] = 1.0;// alpha k
+
+    objects[LEN_OBJ * 4 + 0] = 2.0;//type            # 5 # TRIANGLE AREA
+
+    objects[LEN_OBJ * 4 + 1] = +20.0;//point 1 x
+    objects[LEN_OBJ * 4 + 2] = -20.0;//point 1 y
+    objects[LEN_OBJ * 4 + 3] = -2.0; //point 1 z
+
+    objects[LEN_OBJ * 4 + 4] = -20.0;//point 2 x
+    objects[LEN_OBJ * 4 + 5] = +20.0;//point 2 y
+    objects[LEN_OBJ * 4 + 6] = -2.0; //point 2 z
+
+    objects[LEN_OBJ * 4 + 7] = -20.0;//point 3 x
+    objects[LEN_OBJ * 4 + 8] = -20.0;//point 3 y
+    objects[LEN_OBJ * 4 + 9] = -2.0; //point 3 z
+
+    objects[LEN_OBJ * 4 + 10] = 0.5;//r
+    objects[LEN_OBJ * 4 + 11] = 0.5;//g
+    objects[LEN_OBJ * 4 + 12] = 0.5;//b
+
+    objects[LEN_OBJ * 4 + 13] = 1.0;// alpha k
+
+
+    objects[LEN_OBJ * 5 + 0] = 2.0;//type            # 6 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * 5 + 1] = +20.0;//point 1 x
+    objects[LEN_OBJ * 5 + 2] = +20.0;//point 1 y
+    objects[LEN_OBJ * 5 + 3] = -2.0; //point 1 z
+
+    objects[LEN_OBJ * 5 + 4] = -20.0;//point 2 x
+    objects[LEN_OBJ * 5 + 5] = +20.0;//point 2 y
+    objects[LEN_OBJ * 5 + 6] = -2.0; //point 2 z
+
+    objects[LEN_OBJ * 5 + 7] = +20.0;//point 3 x
+    objects[LEN_OBJ * 5 + 8] = -20.0;//point 3 y
+    objects[LEN_OBJ * 5 + 9] = -2.0; //point 3 z
+
+    objects[LEN_OBJ * 5 + 10] = 0.5;//r
+    objects[LEN_OBJ * 5 + 11] = 0.5;//g
+    objects[LEN_OBJ * 5 + 12] = 0.5;//b
+
+    objects[LEN_OBJ * 5 + 13] = 1.0;// alpha k
+
+
+    */
+    int k_id=0;
+    objects[0] = 1.0;//type                          # 1 #  CIRCLE RED
+    objects[1] = 0.0;//x
+    objects[2] = 0.0;//y
+    objects[3] = 1.0;//z
+    objects[4] = 1.0;//ra
+
+    objects[5] = 1.0;//r
+    objects[6] = 0.0;//g
+    objects[7] = 0.0;//b
+
+    objects[8] = 0.0;// mat
+    objects[9] = 0.0;// prosrachnost
+
+
+    k_id = 1;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 2 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 0.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = -10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 0.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = -10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = -10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 0.0;//r
+    objects[LEN_OBJ * k_id + 11] = 0.0;//g
+    objects[LEN_OBJ * k_id + 12] = 0.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// 
+
+
+
+
+    k_id = 2;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 3 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 0.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 0.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = -10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 0.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 0.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = -10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 0.0;//r
+    objects[LEN_OBJ * k_id + 11] = 0.0;//g
+    objects[LEN_OBJ * k_id + 12] = 0.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+    k_id = 3;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 5 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = +10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = +10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 0.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 0.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 0.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+    k_id = 4;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 4 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 0.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 0.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 0.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = -10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = -10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+    k_id = 5;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 6 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 0.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 0.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 0.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 0.0;//r
+    objects[LEN_OBJ * k_id + 11] = 0.0;//g
+    objects[LEN_OBJ * k_id + 12] = 0.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+    k_id = 6;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 7 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 0.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 0.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 0.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 0.0;//r
+    objects[LEN_OBJ * k_id + 11] = 0.0;//g
+    objects[LEN_OBJ * k_id + 12] = 0.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+    k_id = 7;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 8 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 0.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 0.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 0.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = -10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 0.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+    k_id = 8;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 9 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 0.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = -10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 0.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = -10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 0.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+    k_id = 9;
+    objects[LEN_OBJ * k_id + 0] = 1.0;//type                          # 10 #  CIRCLE LIGHT
+    objects[LEN_OBJ * k_id + 1] = -10.0;//x
+    objects[LEN_OBJ * k_id + 2] = 10.0;//y
+    objects[LEN_OBJ * k_id + 3] = 20.0;//z
+    objects[LEN_OBJ * k_id + 4] = 1.0;//ra
+
+    objects[LEN_OBJ * k_id + 5] = 1.0;//r
+    objects[LEN_OBJ * k_id + 6] = 1.0;//g
+    objects[LEN_OBJ * k_id + 7] = 1.0;//b
+    objects[LEN_OBJ * k_id + 8] = 1.0;// mat
+    objects[LEN_OBJ * k_id + 9] = 0.0;// zerkalo
+
+
+
+
+
+
+
+
+
+    k_id = 10;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 11 # TRIANGLE2 AREA                             ///STENA1
+
+    objects[LEN_OBJ * k_id + 1] = -10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = -10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = -10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = -10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+    k_id = 11;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 12 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = -10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 10.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = -10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = -10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+
+
+
+
+
+
+
+    k_id = 12;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 13 # TRIANGLE2 AREA                             ///STENA2
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = -10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 10.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+
+
+
+    k_id = 13;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 14 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = -10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = 10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+
+    k_id = 14;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 15 # TRIANGLE2 AREA                        ///STENA3
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 0.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = 10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = -10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
+
+
+
+
+
+
+    k_id = 15;
+    objects[LEN_OBJ * k_id + 0] = 2.0;//type            # 16 # TRIANGLE2 AREA
+
+    objects[LEN_OBJ * k_id + 1] = 10.0;//point 1 x
+    objects[LEN_OBJ * k_id + 2] = 10.0;//point 1 y
+    objects[LEN_OBJ * k_id + 3] = 10.0; //point 1 z
+
+    objects[LEN_OBJ * k_id + 4] = -10.0;//point 2 x
+    objects[LEN_OBJ * k_id + 5] = 10.0;//point 2 y
+    objects[LEN_OBJ * k_id + 6] = 10.0; //point 2 z
+
+    objects[LEN_OBJ * k_id + 7] = -10.0;//point 3 x
+    objects[LEN_OBJ * k_id + 8] = 10.0;//point 3 y
+    objects[LEN_OBJ * k_id + 9] = 0.0; //point 3 z
+
+    objects[LEN_OBJ * k_id + 10] = 1.0;//r
+    objects[LEN_OBJ * k_id + 11] = 1.0;//g
+    objects[LEN_OBJ * k_id + 12] = 1.0;//b
+
+    objects[LEN_OBJ * k_id + 13] = 0.0;// mat
+    objects[LEN_OBJ * k_id + 14] = 0.0;// zerkalo
